@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeetMetric | Track Your LeetCode Progress</title>
+    <link rel="stylesheet" href="./leet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>LeetMetric</h1>
+            <p class="subtitle">Track your LeetCode progress with beautiful analytics</p>
+        </div>
+
+        <div class="user-container">
+            <p>Enter your LeetCode username below:</p>
+            <div class="user-input-container">
+                <div class="input-wrapper">
+                    <input type="text" placeholder="Enter your username here" id="user-input">
+                    <div class="input-focus-effect"></div>
+                </div>
+                <button id="search-btn">
+                    <span>Search</span>
+                    <div class="button-glow"></div>
+                </button>
+            </div>
+        </div>
+
+        <div class="stats-container">
+            <div class="progress">
+                <div class="progress-item">
+                    <div class="easy-progress circle">
+                        <span id="easy-label">0%</span>
+                        <p>Easy</p>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="medium-progress circle">
+                        <span id="medium-label">0%</span>
+                        <p>Medium</p>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="hard-progress circle">
+                        <span id="hard-label">0%</span>
+                        <p>Hard</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-cards">
+                <div class="card">
+                    <h4>Total Solved</h4>
+                    <div class="card-value">0</div>
+                    <p class="card-description">Problems completed</p>
+                </div>
+                <div class="card">
+                    <h4>Acceptance Rate</h4>
+                    <div class="card-value">0%</div>
+                    <p class="card-description">Submission success rate</p>
+                </div>
+                <div class="card">
+                    <h4>Ranking</h4>
+                    <div class="card-value">0</div>
+                    <p class="card-description">Global position</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="error-container">
+            <div class="error-message">
+                <h3>User Not Found</h3>
+                <p>We couldn't find that username. Please check and try again.</p>
+                <ul>
+                    <li>Make sure the username is spelled correctly</li>
+                    <li>Check if the profile is public</li>
+                    <li>Try another username</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <p>Made with ❤️ for LeetCoders</p>
+        </footer>
+    </div>
+
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <script src="./leet.js"></script>
+</body>
+</html>
